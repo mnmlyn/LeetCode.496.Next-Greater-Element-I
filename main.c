@@ -2,6 +2,7 @@
  * Return an array of size *returnSize.
  * Note: The returned array must be malloced, assume caller calls free().
  */
+//这种方法的效率更低，比master中的方法效率还低
 int* nextGreaterElement(int* nums1, int nums1Size, int* nums2, int nums2Size, int* numsReturnSize) {
     int *numsReturn = (int *)malloc(sizeof(int)*nums1Size);
     //用栈来辅助，求num2中，每个数字后面更大的数
